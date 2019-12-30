@@ -26,6 +26,7 @@ public class LoginWithParametersStepDefs {
     public void the_title_should_contain(String title) {
         System.out.println("title = " + title);
         BrowserUtils.waitFor(3);
+//        BrowserUtils.waitForVisibility(Driver.get().getTitle(), 3);
         Assert.assertTrue(Driver.get().getTitle().contains(title));
     }
 
